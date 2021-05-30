@@ -1,0 +1,515 @@
+fileFormatVersion: 2
+guid: 5f670b388dac9c54abdff97bd4a0fdbd
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: 22495840_injector001
+    100002: 22495840_injector002
+    100004: 22495840_injector003
+    100006: 22495840_injector004
+    100008: 22495840_injector005
+    100010: 22495840_injector006
+    100012: Curve001
+    100014: Curve002
+    100016: Curve003
+    100018: Curve004
+    100020: Curve007
+    100022: Curve011
+    100024: Curve015
+    100026: Curve019
+    100028: Curve020
+    100030: Curve021
+    100032: Curve022
+    100034: Curve024
+    100036: Curve025
+    100038: Curve026
+    100040: Curve027
+    100042: Curve029
+    100044: Cylinder001
+    100046: Cylinder009
+    100048: Cylinder010
+    100050: Cylinder011
+    100052: Cylinder012
+    100054: Cylinder013
+    100056: Cylinder014
+    100058: Cylinder015
+    100060: Cylinder016
+    100062: Cylinder017
+    100064: Cylinder018
+    100066: Cylinder019
+    100068: Cylinder020
+    100070: Cylinder021
+    100072: Cylinder022
+    100074: Cylinder023
+    100076: Cylinder024
+    100078: Cylinder025
+    100080: Cylinder026
+    100082: Cylinder027
+    100084: Cylinder030
+    100086: Cylinder031
+    100088: Cylinder032
+    100090: Cylinder033
+    100092: Cylinder034
+    100094: Cylinder035
+    100096: Cylinder040
+    100098: Cylinder042
+    100100: Cylinder043
+    100102: Cylinder045
+    100104: Cylinder046
+    100106: Cylinder047
+    100108: Cylinder048
+    100110: Cylinder049
+    100112: Cylinder050
+    100114: Cylinder051
+    100116: Cylinder052
+    100118: Cylinder053
+    100120: Cylinder054
+    100122: Cylinder056
+    100124: Cylinder057
+    100126: Cylinder058
+    100128: Cylinder059
+    100130: Cylinder060
+    100132: Cylinder061
+    100134: //RootNode
+    100136: Fluide essence
+    100138: fluide essence _rampecommune 01
+    100140: fluide essence _rampecommune 010
+    100142: fluide essence _rampecommune 02
+    100144: fluide essence _rampecommune 03
+    100146: fluide essence _rampecommune 04
+    100148: fluide essence _rampecommune 05
+    100150: fluide essence _rampecommune 06
+    100152: fluide essence _rampecommune 07
+    100154: fluide essence _rampecommune 08
+    100156: fluide essence _rampecommune 09
+    100158: fluide essence _rampecommune 12
+    100160: fluide essence _rampecommune 13
+    100162: fluide essence _rampecommune 14
+    100164: fluide essence _rampecommune reservoir 01
+    100166: fluide essence _rampecommune reservoir 02
+    100168: fluiode001
+    100170: Group002
+    100172: Group003
+    100174: Injector Interieur
+    100176: Injector Interieur001
+    100178: Injector Interieur002
+    100180: Injector Interieur003
+    100182: Injector Interieur004
+    100184: Injector Interieur005
+    100186: Refroiddissemnt EGR
+    400000: 22495840_injector001
+    400002: 22495840_injector002
+    400004: 22495840_injector003
+    400006: 22495840_injector004
+    400008: 22495840_injector005
+    400010: 22495840_injector006
+    400012: Curve001
+    400014: Curve002
+    400016: Curve003
+    400018: Curve004
+    400020: Curve007
+    400022: Curve011
+    400024: Curve015
+    400026: Curve019
+    400028: Curve020
+    400030: Curve021
+    400032: Curve022
+    400034: Curve024
+    400036: Curve025
+    400038: Curve026
+    400040: Curve027
+    400042: Curve029
+    400044: Cylinder001
+    400046: Cylinder009
+    400048: Cylinder010
+    400050: Cylinder011
+    400052: Cylinder012
+    400054: Cylinder013
+    400056: Cylinder014
+    400058: Cylinder015
+    400060: Cylinder016
+    400062: Cylinder017
+    400064: Cylinder018
+    400066: Cylinder019
+    400068: Cylinder020
+    400070: Cylinder021
+    400072: Cylinder022
+    400074: Cylinder023
+    400076: Cylinder024
+    400078: Cylinder025
+    400080: Cylinder026
+    400082: Cylinder027
+    400084: Cylinder030
+    400086: Cylinder031
+    400088: Cylinder032
+    400090: Cylinder033
+    400092: Cylinder034
+    400094: Cylinder035
+    400096: Cylinder040
+    400098: Cylinder042
+    400100: Cylinder043
+    400102: Cylinder045
+    400104: Cylinder046
+    400106: Cylinder047
+    400108: Cylinder048
+    400110: Cylinder049
+    400112: Cylinder050
+    400114: Cylinder051
+    400116: Cylinder052
+    400118: Cylinder053
+    400120: Cylinder054
+    400122: Cylinder056
+    400124: Cylinder057
+    400126: Cylinder058
+    400128: Cylinder059
+    400130: Cylinder060
+    400132: Cylinder061
+    400134: //RootNode
+    400136: Fluide essence
+    400138: fluide essence _rampecommune 01
+    400140: fluide essence _rampecommune 010
+    400142: fluide essence _rampecommune 02
+    400144: fluide essence _rampecommune 03
+    400146: fluide essence _rampecommune 04
+    400148: fluide essence _rampecommune 05
+    400150: fluide essence _rampecommune 06
+    400152: fluide essence _rampecommune 07
+    400154: fluide essence _rampecommune 08
+    400156: fluide essence _rampecommune 09
+    400158: fluide essence _rampecommune 12
+    400160: fluide essence _rampecommune 13
+    400162: fluide essence _rampecommune 14
+    400164: fluide essence _rampecommune reservoir 01
+    400166: fluide essence _rampecommune reservoir 02
+    400168: fluiode001
+    400170: Group002
+    400172: Group003
+    400174: Injector Interieur
+    400176: Injector Interieur001
+    400178: Injector Interieur002
+    400180: Injector Interieur003
+    400182: Injector Interieur004
+    400184: Injector Interieur005
+    400186: Refroiddissemnt EGR
+    2100000: 16 - Default
+    2100002: 13 - Default
+    2100004: _22206270_asm_Lpdefault
+    2100006: 02 - Default
+    2100008: No Name
+    2100010: 17 - Default
+    2100012: 15 - Default
+    2300000: 22495840_injector001
+    2300002: 22495840_injector002
+    2300004: 22495840_injector003
+    2300006: 22495840_injector004
+    2300008: 22495840_injector005
+    2300010: 22495840_injector006
+    2300012: Curve027
+    2300014: Curve029
+    2300016: Cylinder001
+    2300018: Cylinder009
+    2300020: Cylinder010
+    2300022: Cylinder011
+    2300024: Cylinder012
+    2300026: Cylinder013
+    2300028: Cylinder014
+    2300030: Cylinder015
+    2300032: Cylinder016
+    2300034: Cylinder017
+    2300036: Cylinder018
+    2300038: Cylinder019
+    2300040: Cylinder020
+    2300042: Cylinder021
+    2300044: Cylinder022
+    2300046: Cylinder023
+    2300048: Cylinder024
+    2300050: Cylinder025
+    2300052: Cylinder026
+    2300054: Cylinder027
+    2300056: Cylinder030
+    2300058: Cylinder031
+    2300060: Cylinder032
+    2300062: Cylinder033
+    2300064: Cylinder034
+    2300066: Cylinder035
+    2300068: Cylinder040
+    2300070: Cylinder042
+    2300072: Cylinder043
+    2300074: Cylinder045
+    2300076: Cylinder046
+    2300078: Cylinder047
+    2300080: Cylinder048
+    2300082: Cylinder049
+    2300084: Cylinder050
+    2300086: Cylinder051
+    2300088: Cylinder052
+    2300090: Cylinder053
+    2300092: Cylinder054
+    2300094: Cylinder056
+    2300096: Cylinder057
+    2300098: Cylinder058
+    2300100: Cylinder059
+    2300102: Cylinder060
+    2300104: Cylinder061
+    2300106: fluide essence _rampecommune 01
+    2300108: fluide essence _rampecommune 010
+    2300110: fluide essence _rampecommune 02
+    2300112: fluide essence _rampecommune 03
+    2300114: fluide essence _rampecommune 04
+    2300116: fluide essence _rampecommune 05
+    2300118: fluide essence _rampecommune 06
+    2300120: fluide essence _rampecommune 07
+    2300122: fluide essence _rampecommune 08
+    2300124: fluide essence _rampecommune 09
+    2300126: fluide essence _rampecommune 12
+    2300128: fluide essence _rampecommune 13
+    2300130: fluide essence _rampecommune 14
+    2300132: fluide essence _rampecommune reservoir 01
+    2300134: fluide essence _rampecommune reservoir 02
+    2300136: fluiode001
+    2300138: Injector Interieur
+    2300140: Injector Interieur001
+    2300142: Injector Interieur002
+    2300144: Injector Interieur003
+    2300146: Injector Interieur004
+    2300148: Injector Interieur005
+    2300150: Refroiddissemnt EGR
+    3300000: 22495840_injector001
+    3300002: 22495840_injector002
+    3300004: 22495840_injector003
+    3300006: 22495840_injector004
+    3300008: 22495840_injector005
+    3300010: 22495840_injector006
+    3300012: Curve027
+    3300014: Curve029
+    3300016: Cylinder001
+    3300018: Cylinder009
+    3300020: Cylinder010
+    3300022: Cylinder011
+    3300024: Cylinder012
+    3300026: Cylinder013
+    3300028: Cylinder014
+    3300030: Cylinder015
+    3300032: Cylinder016
+    3300034: Cylinder017
+    3300036: Cylinder018
+    3300038: Cylinder019
+    3300040: Cylinder020
+    3300042: Cylinder021
+    3300044: Cylinder022
+    3300046: Cylinder023
+    3300048: Cylinder024
+    3300050: Cylinder025
+    3300052: Cylinder026
+    3300054: Cylinder027
+    3300056: Cylinder030
+    3300058: Cylinder031
+    3300060: Cylinder032
+    3300062: Cylinder033
+    3300064: Cylinder034
+    3300066: Cylinder035
+    3300068: Cylinder040
+    3300070: Cylinder042
+    3300072: Cylinder043
+    3300074: Cylinder045
+    3300076: Cylinder046
+    3300078: Cylinder047
+    3300080: Cylinder048
+    3300082: Cylinder049
+    3300084: Cylinder050
+    3300086: Cylinder051
+    3300088: Cylinder052
+    3300090: Cylinder053
+    3300092: Cylinder054
+    3300094: Cylinder056
+    3300096: Cylinder057
+    3300098: Cylinder058
+    3300100: Cylinder059
+    3300102: Cylinder060
+    3300104: Cylinder061
+    3300106: fluide essence _rampecommune 01
+    3300108: fluide essence _rampecommune 010
+    3300110: fluide essence _rampecommune 02
+    3300112: fluide essence _rampecommune 03
+    3300114: fluide essence _rampecommune 04
+    3300116: fluide essence _rampecommune 05
+    3300118: fluide essence _rampecommune 06
+    3300120: fluide essence _rampecommune 07
+    3300122: fluide essence _rampecommune 08
+    3300124: fluide essence _rampecommune 09
+    3300126: fluide essence _rampecommune 12
+    3300128: fluide essence _rampecommune 13
+    3300130: fluide essence _rampecommune 14
+    3300132: fluide essence _rampecommune reservoir 01
+    3300134: fluide essence _rampecommune reservoir 02
+    3300136: fluiode001
+    3300138: Injector Interieur
+    3300140: Injector Interieur001
+    3300142: Injector Interieur002
+    3300144: Injector Interieur003
+    3300146: Injector Interieur004
+    3300148: Injector Interieur005
+    3300150: Refroiddissemnt EGR
+    4300000: Refroiddissemnt EGR
+    4300002: Cylinder052
+    4300004: Cylinder009
+    4300006: Cylinder012
+    4300008: Cylinder013
+    4300010: Cylinder014
+    4300012: Cylinder051
+    4300014: Cylinder016
+    4300016: Cylinder023
+    4300018: Cylinder027
+    4300020: Cylinder001
+    4300022: 22495840_injector001
+    4300024: Cylinder011
+    4300026: Cylinder019
+    4300028: Cylinder024
+    4300030: Cylinder015
+    4300032: Cylinder026
+    4300034: 22495840_injector002
+    4300036: 22495840_injector005
+    4300038: Cylinder018
+    4300040: fluiode001
+    4300042: Cylinder049
+    4300044: Cylinder048
+    4300046: Cylinder047
+    4300048: 22495840_injector004
+    4300050: Cylinder017
+    4300052: Cylinder020
+    4300054: Injector Interieur
+    4300056: Cylinder021
+    4300058: Cylinder040
+    4300060: 22495840_injector006
+    4300062: Cylinder025
+    4300064: 22495840_injector003
+    4300066: Cylinder042
+    4300068: Cylinder046
+    4300070: Cylinder010
+    4300072: Cylinder022
+    4300074: Cylinder045
+    4300076: Cylinder033
+    4300078: Cylinder035
+    4300080: Cylinder054
+    4300082: Injector Interieur001
+    4300084: Injector Interieur005
+    4300086: Injector Interieur003
+    4300088: Injector Interieur002
+    4300090: Injector Interieur004
+    4300092: Cylinder050
+    4300094: Cylinder043
+    4300096: Cylinder034
+    4300098: Cylinder053
+    4300100: Cylinder057
+    4300102: Cylinder060
+    4300104: Cylinder059
+    4300106: Cylinder061
+    4300108: Cylinder058
+    4300110: Cylinder031
+    4300112: Curve027
+    4300114: Cylinder056
+    4300116: Curve029
+    4300118: Cylinder032
+    4300120: Cylinder030
+    4300122: fluide essence _rampecommune 03
+    4300124: fluide essence _rampecommune 06
+    4300126: fluide essence _rampecommune 08
+    4300128: fluide essence _rampecommune reservoir 01
+    4300130: fluide essence _rampecommune 010
+    4300132: fluide essence _rampecommune 14
+    4300134: fluide essence _rampecommune 02
+    4300136: fluide essence _rampecommune 12
+    4300138: fluide essence _rampecommune 01
+    4300140: fluide essence _rampecommune 07
+    4300142: fluide essence _rampecommune 13
+    4300144: fluide essence _rampecommune 05
+    4300146: fluide essence _rampecommune 09
+    4300148: fluide essence _rampecommune 04
+    4300150: fluide essence _rampecommune reservoir 02
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

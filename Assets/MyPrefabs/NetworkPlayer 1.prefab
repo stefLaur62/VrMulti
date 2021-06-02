@@ -1102,6 +1102,7 @@ GameObject:
   - component: {fileID: 1675309604732807531}
   - component: {fileID: 1675309604722819237}
   - component: {fileID: 1632930767654672363}
+  - component: {fileID: 7436219923670131649}
   m_Layer: 7
   m_Name: OVRCameraRig
   m_TagString: Untagged
@@ -1156,6 +1157,19 @@ MonoBehaviour:
   resetHmdPoseByMiddleMouseButton: 1
   activateKeys: 3201000031010000
   pitchKeys: 3401000033010000
+--- !u!114 &7436219923670131649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675309604732515659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7400f27f004f864785fa337100005c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  headStartHeight: 2
 --- !u!1 &1675309604732515661
 GameObject:
   m_ObjectHideFlags: 0
@@ -4869,12 +4883,9 @@ GameObject:
   - component: {fileID: 3675196024462540887}
   - component: {fileID: 7785804720644538936}
   - component: {fileID: 2869321846557901236}
-  - component: {fileID: 3747182916046784195}
-  - component: {fileID: 640901114446352083}
   - component: {fileID: 8807712680260310159}
   - component: {fileID: 5356902220688103230}
   - component: {fileID: 8906575821729542076}
-  - component: {fileID: 8963441455442695787}
   m_Layer: 7
   m_Name: NetworkPlayer 1
   m_TagString: Untagged
@@ -5259,52 +5270,6 @@ MonoBehaviour:
   interpolateScale: 1
   syncScale: 1
   target: {fileID: 1592229210273902097}
---- !u!143 &3747182916046784195
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6328369388456087167}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Height: 2.2
-  m_Radius: 0.29
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 1.1, z: 0}
---- !u!114 &640901114446352083
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6328369388456087167}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0950df82e7936c84983497630bde5b54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Acceleration: 0.1
-  Damping: 0.3
-  BackAndSideDampen: 0.5
-  JumpForce: 0.3
-  RotationAmount: 1.5
-  RotationRatchet: 45
-  SnapRotation: 1
-  RotateAroundGuardianCenter: 0
-  FixedSpeedSteps: 0
-  HmdResetsY: 1
-  HmdRotatesY: 1
-  GravityModifier: 0.379
-  useProfileData: 1
-  EnableLinearMovement: 1
-  EnableRotation: 1
-  RotationEitherThumbstick: 0
 --- !u!136 &8807712680260310159
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5354,22 +5319,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &8963441455442695787
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6328369388456087167}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72f475a75bbc58444a78b889119942ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncMode: 0
-  syncInterval: 0.1
-  oVRGrabberLeftHand: {fileID: 2758759643388096513}
-  oVRGrabberRightHand: {fileID: 8853354613691241163}
 --- !u!1 &6447460014644034641
 GameObject:
   m_ObjectHideFlags: 0

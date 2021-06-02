@@ -27,6 +27,7 @@ public class LocalPlayerControl : NetworkBehaviour
         {
             Destroy(ovrCamRig);
             Destroy(this.GetComponentInChildren<RootMotion.FinalIK.VRIK>());
+            Destroy(GetComponent<SimpleCapsuleWithStickMovement>());
         }
         else
         {

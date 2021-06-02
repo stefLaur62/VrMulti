@@ -8,29 +8,31 @@ public class GiveAuthority : NetworkBehaviour
 {
     private OVRGrabbable oVRGrabbable;
     private Transform myTransform;
-    private NetworkIdentity networkIdentity;
 
-    [SerializeField] float lerpRate = 30f;
+    private float lerpRate = 30f;
 
     [SyncVar]
     private Vector3 syncPos;
+    [SyncVar]
+    private Quaternion syncRot;
 
     private Vector3 lastPos;
-    private float threshold = 0.3f;
+    private float threshold = 0.05f;
+    private Quaternion lastRotation;
 
     void Start()
     {
         oVRGrabbable = GetComponent<OVRGrabbable>();
-        networkIdentity = GetComponent<NetworkIdentity>();
         myTransform = GetComponent<Transform>();
         syncPos = myTransform.position;
+        syncRot = myTransform.rotation;
     }
 
     void FixedUpdate()
     {
         SendPos();
-        //LerpPosition();
     }
+
     [Command(requiresAuthority = false)]
     void CmdUpdatePos(Vector3 pos)
     {
@@ -38,7 +40,12 @@ public class GiveAuthority : NetworkBehaviour
         syncPos = pos;
         LerpPosition();
     }
-
+    [Command(requiresAuthority = false)]
+    void CmdUpdateRotation(Quaternion rotation)
+    {
+        syncRot = rotation;
+        LerpRotation();
+    }
     [ClientCallback]
     void SendPos()
     {
@@ -50,6 +57,12 @@ public class GiveAuthority : NetworkBehaviour
                 CmdUpdatePos(myTransform.position);
                 lastPos = myTransform.position;
             }
+            if (Quaternion.Angle(myTransform.rotation, lastRotation) > threshold)
+            {
+                Debug.Log("pos send:" + myTransform.position);
+                CmdUpdateRotation(myTransform.rotation);
+                lastRotation = myTransform.rotation;
+            }
         }
     }
 
@@ -58,10 +71,16 @@ public class GiveAuthority : NetworkBehaviour
     {
         if (!oVRGrabbable.isGrabbed)
         {
-            Debug.Log("SyncPos" + syncPos);
-            Debug.Log("Pos" + myTransform.position);
-            Debug.Log("Lerp:" + Vector3.Lerp(myTransform.position, syncPos, Time.deltaTime * lerpRate));
             myTransform.position = syncPos;
+        }
+    }
+
+    [ClientRpc]
+    void LerpRotation()
+    {
+        if (!oVRGrabbable.isGrabbed)
+        {
+            myTransform.rotation = syncRot;
         }
     }
 }

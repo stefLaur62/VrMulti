@@ -11,11 +11,13 @@ public class GiveAuthority : NetworkBehaviour
     private NetworkIdentity networkIdentity;
 
     [SerializeField] float lerpRate = 30f;
+
     [SyncVar]
     private Vector3 syncPos;
 
     private Vector3 lastPos;
     private float threshold = 0.3f;
+
     void Start()
     {
         oVRGrabbable = GetComponent<OVRGrabbable>();

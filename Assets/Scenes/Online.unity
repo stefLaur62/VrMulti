@@ -260,7 +260,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 25009212}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.474, y: -1.042, z: 0.188}
+  m_LocalPosition: {x: 1.474, y: -0.802, z: 0.188}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 856493726}
@@ -277,18 +277,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 25009212}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f74aedd71d9a4f55b3ce499326d45fb, type: 3}
+  m_Script: {fileID: 11500000, guid: b81fc56d913357644bfe10d52d4ebcb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   syncMode: 0
-  syncInterval: 0.1
-  clientAuthority: 1
-  localPositionSensitivity: 0.01
-  localRotationSensitivity: 0.01
-  localScaleSensitivity: 0.01
-  compressRotation: 0
-  interpolateScale: 1
-  syncScale: 1
+  syncInterval: 0
+  lerpRate: 30
 --- !u!114 &25009218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5532,7 +5526,7 @@ MonoBehaviour:
   usePositionTracking: 1
   useRotationTracking: 1
   useIPDInPositionTracking: 1
-  resetTrackerOnLoad: 0
+  resetTrackerOnLoad: 1
   AllowRecenter: 1
   LateControllerUpdate: 1
 --- !u!4 &403498361
@@ -5561,6 +5555,8 @@ GameObject:
   - component: {fileID: 428262289}
   - component: {fileID: 428262288}
   - component: {fileID: 428262287}
+  - component: {fileID: 428262291}
+  - component: {fileID: 428262290}
   m_Layer: 6
   m_Name: 21881681_asm_to_move
   m_TagString: Untagged
@@ -5630,6 +5626,38 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 3
+--- !u!114 &428262290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428262285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b81fc56d913357644bfe10d52d4ebcb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0
+  lerpRate: 30
+--- !u!114 &428262291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428262285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneId: 1111987636
+  serverOnly: 0
+  visible: 0
+  m_AssetId: 
+  hasSpawned: 0
 --- !u!1 &430678179
 GameObject:
   m_ObjectHideFlags: 0
@@ -5790,18 +5818,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 432180911}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f74aedd71d9a4f55b3ce499326d45fb, type: 3}
+  m_Script: {fileID: 11500000, guid: b81fc56d913357644bfe10d52d4ebcb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   syncMode: 0
-  syncInterval: 0.1
-  clientAuthority: 1
-  localPositionSensitivity: 0.01
-  localRotationSensitivity: 0.01
-  localScaleSensitivity: 0.01
-  compressRotation: 0
-  interpolateScale: 1
-  syncScale: 1
+  syncInterval: 0
+  lerpRate: 30
 --- !u!114 &432180919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6549,7 +6571,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 514021839}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.07, y: -3.41, z: -4.87}
+  m_LocalPosition: {x: 2.07, y: -2.42, z: -4.87}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1928178142}
@@ -6617,18 +6639,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 514021839}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f74aedd71d9a4f55b3ce499326d45fb, type: 3}
+  m_Script: {fileID: 11500000, guid: b81fc56d913357644bfe10d52d4ebcb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   syncMode: 0
-  syncInterval: 0.1
-  clientAuthority: 1
-  localPositionSensitivity: 0.01
-  localRotationSensitivity: 0.01
-  localScaleSensitivity: 0.01
-  compressRotation: 0
-  interpolateScale: 1
-  syncScale: 1
+  syncInterval: 0
+  lerpRate: 30
 --- !u!114 &514021848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7678,18 +7694,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 596701593}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f74aedd71d9a4f55b3ce499326d45fb, type: 3}
+  m_Script: {fileID: 11500000, guid: b81fc56d913357644bfe10d52d4ebcb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   syncMode: 0
-  syncInterval: 0.1
-  clientAuthority: 1
-  localPositionSensitivity: 0.01
-  localRotationSensitivity: 0.01
-  localScaleSensitivity: 0.01
-  compressRotation: 0
-  interpolateScale: 1
-  syncScale: 1
+  syncInterval: 0
+  lerpRate: 30
 --- !u!114 &596701599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8041,18 +8051,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 631496271}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f74aedd71d9a4f55b3ce499326d45fb, type: 3}
+  m_Script: {fileID: 11500000, guid: b81fc56d913357644bfe10d52d4ebcb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   syncMode: 0
-  syncInterval: 0.1
-  clientAuthority: 1
-  localPositionSensitivity: 0.01
-  localRotationSensitivity: 0.01
-  localScaleSensitivity: 0.01
-  compressRotation: 0
-  interpolateScale: 1
-  syncScale: 1
+  syncInterval: 0
+  lerpRate: 30
 --- !u!114 &631496278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10053,18 +10057,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 783007099}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f74aedd71d9a4f55b3ce499326d45fb, type: 3}
+  m_Script: {fileID: 11500000, guid: b81fc56d913357644bfe10d52d4ebcb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   syncMode: 0
-  syncInterval: 0.1
-  clientAuthority: 1
-  localPositionSensitivity: 0.01
-  localRotationSensitivity: 0.01
-  localScaleSensitivity: 0.01
-  compressRotation: 0
-  interpolateScale: 1
-  syncScale: 1
+  syncInterval: 0
+  lerpRate: 30
 --- !u!114 &783007105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11036,7 +11034,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &894895531
 Transform:
   m_ObjectHideFlags: 0
@@ -14999,18 +14997,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1231035763}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f74aedd71d9a4f55b3ce499326d45fb, type: 3}
+  m_Script: {fileID: 11500000, guid: b81fc56d913357644bfe10d52d4ebcb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   syncMode: 0
-  syncInterval: 0.1
-  clientAuthority: 1
-  localPositionSensitivity: 0.01
-  localRotationSensitivity: 0.01
-  localScaleSensitivity: 0.01
-  compressRotation: 0
-  interpolateScale: 1
-  syncScale: 1
+  syncInterval: 0
+  lerpRate: 30
 --- !u!114 &1231035769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17423,18 +17415,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1405548018}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f74aedd71d9a4f55b3ce499326d45fb, type: 3}
+  m_Script: {fileID: 11500000, guid: b81fc56d913357644bfe10d52d4ebcb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   syncMode: 0
-  syncInterval: 0.1
-  clientAuthority: 1
-  localPositionSensitivity: 0.01
-  localRotationSensitivity: 0.01
-  localScaleSensitivity: 0.01
-  compressRotation: 0
-  interpolateScale: 1
-  syncScale: 1
+  syncInterval: 0
+  lerpRate: 30
 --- !u!114 &1405548024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18803,18 +18789,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1480391231}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f74aedd71d9a4f55b3ce499326d45fb, type: 3}
+  m_Script: {fileID: 11500000, guid: b81fc56d913357644bfe10d52d4ebcb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   syncMode: 0
-  syncInterval: 0.1
-  clientAuthority: 1
-  localPositionSensitivity: 0.01
-  localRotationSensitivity: 0.01
-  localScaleSensitivity: 0.01
-  compressRotation: 0
-  interpolateScale: 1
-  syncScale: 1
+  syncInterval: 0
+  lerpRate: 30
 --- !u!114 &1480391238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19441,18 +19421,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1511041533}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f74aedd71d9a4f55b3ce499326d45fb, type: 3}
+  m_Script: {fileID: 11500000, guid: b81fc56d913357644bfe10d52d4ebcb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   syncMode: 0
-  syncInterval: 0.1
-  clientAuthority: 1
-  localPositionSensitivity: 0.01
-  localRotationSensitivity: 0.01
-  localScaleSensitivity: 0.01
-  compressRotation: 0
-  interpolateScale: 1
-  syncScale: 1
+  syncInterval: 0
+  lerpRate: 30
 --- !u!114 &1511041539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19750,18 +19724,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1546815740}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f74aedd71d9a4f55b3ce499326d45fb, type: 3}
+  m_Script: {fileID: 11500000, guid: b81fc56d913357644bfe10d52d4ebcb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   syncMode: 0
-  syncInterval: 0.1
-  clientAuthority: 1
-  localPositionSensitivity: 0.01
-  localRotationSensitivity: 0.01
-  localScaleSensitivity: 0.01
-  compressRotation: 0
-  interpolateScale: 1
-  syncScale: 1
+  syncInterval: 0
+  lerpRate: 30
 --- !u!114 &1546815748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23069,18 +23037,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1792757601}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f74aedd71d9a4f55b3ce499326d45fb, type: 3}
+  m_Script: {fileID: 11500000, guid: b81fc56d913357644bfe10d52d4ebcb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   syncMode: 0
-  syncInterval: 0.1
-  clientAuthority: 1
-  localPositionSensitivity: 0.01
-  localRotationSensitivity: 0.01
-  localScaleSensitivity: 0.01
-  compressRotation: 0
-  interpolateScale: 1
-  syncScale: 1
+  syncInterval: 0
+  lerpRate: 30
 --- !u!114 &1792757610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23718,18 +23680,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1826520364}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f74aedd71d9a4f55b3ce499326d45fb, type: 3}
+  m_Script: {fileID: 11500000, guid: b81fc56d913357644bfe10d52d4ebcb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   syncMode: 0
-  syncInterval: 0.1
-  clientAuthority: 1
-  localPositionSensitivity: 0.01
-  localRotationSensitivity: 0.01
-  localScaleSensitivity: 0.01
-  compressRotation: 0
-  interpolateScale: 1
-  syncScale: 1
+  syncInterval: 0
+  lerpRate: 30
 --- !u!114 &1826520372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25140,7 +25096,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1955273973
 Transform:
   m_ObjectHideFlags: 0
@@ -25751,18 +25707,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2067071107}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f74aedd71d9a4f55b3ce499326d45fb, type: 3}
+  m_Script: {fileID: 11500000, guid: b81fc56d913357644bfe10d52d4ebcb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   syncMode: 0
-  syncInterval: 0.1
-  clientAuthority: 1
-  localPositionSensitivity: 0.01
-  localRotationSensitivity: 0.01
-  localScaleSensitivity: 0.01
-  compressRotation: 0
-  interpolateScale: 1
-  syncScale: 1
+  syncInterval: 0
+  lerpRate: 30
 --- !u!114 &2067071114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27471,32 +27421,32 @@ PrefabInstance:
     - target: {fileID: 8348894769828965227, guid: 36aa624c2b18c864982a6493fbfc8b00,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.4
+      value: 0.45
       objectReference: {fileID: 0}
     - target: {fileID: 8348894769828965227, guid: 36aa624c2b18c864982a6493fbfc8b00,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.4
+      value: 0.45
       objectReference: {fileID: 0}
     - target: {fileID: 8348894769828965227, guid: 36aa624c2b18c864982a6493fbfc8b00,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.4
+      value: 0.45
       objectReference: {fileID: 0}
     - target: {fileID: 8348894769828965227, guid: 36aa624c2b18c864982a6493fbfc8b00,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.770159
+      value: -2.4
       objectReference: {fileID: 0}
     - target: {fileID: 8348894769828965227, guid: 36aa624c2b18c864982a6493fbfc8b00,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.901
+      value: 0.994
       objectReference: {fileID: 0}
     - target: {fileID: 8348894769828965227, guid: 36aa624c2b18c864982a6493fbfc8b00,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 9.778
+      value: 9.67
       objectReference: {fileID: 0}
     - target: {fileID: 8348894769828965227, guid: 36aa624c2b18c864982a6493fbfc8b00,
         type: 3}
@@ -27531,6 +27481,11 @@ PrefabInstance:
     - target: {fileID: 8348894769828965227, guid: 36aa624c2b18c864982a6493fbfc8b00,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8348894771158252419, guid: 36aa624c2b18c864982a6493fbfc8b00,
+        type: 3}
+      propertyPath: m_Convex
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

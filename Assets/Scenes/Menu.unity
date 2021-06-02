@@ -468,7 +468,7 @@ MonoBehaviour:
   player: {fileID: 11400000, guid: 4cfe50be37528834f9931e6f6857f530, type: 2}
   isServer: 0
   isAutoConnect: 0
-  autoConnectAdress: localhost
+  autoConnectAdress: 192.168.42.175
   networkManager: {fileID: 733354112}
 --- !u!4 &392624767
 Transform:

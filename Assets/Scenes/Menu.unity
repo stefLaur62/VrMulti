@@ -468,7 +468,7 @@ MonoBehaviour:
   player: {fileID: 11400000, guid: 4cfe50be37528834f9931e6f6857f530, type: 2}
   isServer: 0
   isAutoConnect: 0
-  autoConnectAdress: 176.31.110.215
+  autoConnectAdress: localhost
   networkManager: {fileID: 733354112}
 --- !u!4 &392624767
 Transform:
@@ -785,7 +785,7 @@ MonoBehaviour:
   PersistNetworkManagerToOfflineScene: 0
   runInBackground: 1
   autoStartServerBuild: 1
-  serverTickRate: 30
+  serverTickRate: 60
   serverBatching: 1
   serverBatchInterval: 0
   offlineScene: Assets/Scenes/Menu.unity

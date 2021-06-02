@@ -21,7 +21,6 @@ public class AutoPlaceObject : MonoBehaviour
     {
         if (objectInRange && objOVRGrabbable != null && !objOVRGrabbable.isGrabbed)
         {
-            Debug.Log("PLace");
             objectToMove.transform.SetPositionAndRotation(modelTransform.position, modelTransform.rotation);
             //empecher le déplacement
         }
@@ -29,20 +28,16 @@ public class AutoPlaceObject : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Collide");
         if(other.gameObject == objectToMove)
         {
-            Debug.Log("Right object in area");
             objectInRange = true;
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        Debug.Log("Collide");
         if (other.gameObject == objectToMove)
         {
-            Debug.Log("Right object left area");
             objectInRange = false;
         }
     }

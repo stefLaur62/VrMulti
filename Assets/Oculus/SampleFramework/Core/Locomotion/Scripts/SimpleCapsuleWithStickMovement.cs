@@ -42,6 +42,8 @@ public class SimpleCapsuleWithStickMovement : MonoBehaviour
 
     void RotatePlayerToHMD()
     {
+		if (CameraRig.trackingSpace == null)
+			return;
 		Transform root = CameraRig.trackingSpace;
 		Transform centerEye = CameraRig.centerEyeAnchor;
 

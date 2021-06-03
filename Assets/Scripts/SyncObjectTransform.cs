@@ -4,7 +4,7 @@ using UnityEngine;
 using Mirror;
 using System;
 
-public class GiveAuthority : NetworkBehaviour
+public class SyncObjectTransform : NetworkBehaviour
 {
     private OVRGrabbable oVRGrabbable;
     private Transform myTransform;
@@ -26,46 +26,51 @@ public class GiveAuthority : NetworkBehaviour
         myTransform = GetComponent<Transform>();
         syncPos = myTransform.position;
         syncRot = myTransform.rotation;
+
+        syncInterval = 0.05f;
     }
 
     void FixedUpdate()
     {
-        SendPos();
+        SendPosAndRotation();
     }
 
+    //Change position of object on server
     [Command(requiresAuthority = false)]
     void CmdUpdatePos(Vector3 pos)
     {
-        Debug.Log("cmd pos:" + pos);
         syncPos = pos;
         LerpPosition();
     }
+
+    //Change rotation of object on server
     [Command(requiresAuthority = false)]
     void CmdUpdateRotation(Quaternion rotation)
     {
         syncRot = rotation;
         LerpRotation();
     }
+
+    //If player grab the object then notify server object with new position and rotation
     [ClientCallback]
-    void SendPos()
+    void SendPosAndRotation()
     {
         if (oVRGrabbable.isGrabbed)
         {
             if (Vector3.Distance(myTransform.position, lastPos) > threshold)
             {
-                Debug.Log("pos send:" + myTransform.position);
                 CmdUpdatePos(myTransform.position);
                 lastPos = myTransform.position;
             }
             if (Quaternion.Angle(myTransform.rotation, lastRotation) > threshold)
             {
-                Debug.Log("pos send:" + myTransform.position);
                 CmdUpdateRotation(myTransform.rotation);
                 lastRotation = myTransform.rotation;
             }
         }
     }
 
+    //Update position on client that doesn't grab the object
     [ClientRpc]
     void LerpPosition()
     {
@@ -75,6 +80,7 @@ public class GiveAuthority : NetworkBehaviour
         }
     }
 
+    //Update rotation on client that doesn't grab the object
     [ClientRpc]
     void LerpRotation()
     {

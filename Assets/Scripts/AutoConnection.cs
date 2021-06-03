@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Mirror;
-public class JoinGame : MonoBehaviour
+public class AutoConnection : MonoBehaviour
 {
-    public PlayerSO player;
     [SerializeField]
     private bool isServer;
     [SerializeField]
@@ -17,21 +16,23 @@ public class JoinGame : MonoBehaviour
 
     void Start()
     {
-        if (isAutoConnect)
+        JoinGame();
+    }
+
+    //If isAutoConnect is true then it join or create game
+    private void JoinGame()
+    {
+        if (isAutoConnect && networkManager != null)
         {
             networkManager.networkAddress = autoConnectAdress;
             if (isServer)
             {
                 networkManager.StartHost();
-            } else
+            }
+            else
             {
                 networkManager.StartClient();
             }
         }
-    }
-
-    public void JoinGameAsClient()
-    {
-        player.name = GameObject.Find("PlayerNameText").GetComponent<Text>().text;
     }
 }

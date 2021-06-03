@@ -16,14 +16,10 @@ public class AutoPlaceObject : MonoBehaviour
             objOVRGrabbable = objectToMove.GetComponent<OVRGrabbable>();
 
     }
-    // Update is called once per frame
+
     void Update()
     {
-        if (objectInRange && objOVRGrabbable != null && !objOVRGrabbable.isGrabbed)
-        {
-            objectToMove.transform.SetPositionAndRotation(modelTransform.position, modelTransform.rotation);
-            //empecher le déplacement
-        }
+        PlaceObject();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -40,5 +36,28 @@ public class AutoPlaceObject : MonoBehaviour
         {
             objectInRange = false;
         }
+    }
+
+    //Place object when in the right area
+    private void PlaceObject()
+    {
+        if (objectInRange && objOVRGrabbable != null && !objOVRGrabbable.isGrabbed)
+        {
+            objectToMove.transform.SetPositionAndRotation(modelTransform.position, modelTransform.rotation);
+            DisableObjectGrab();
+        }
+    }
+
+    //Disable grab on Object
+    private void DisableObjectGrab()
+    {
+        if (objOVRGrabbable != null && objOVRGrabbable.grabbedBy == null)
+        {
+            Destroy(objOVRGrabbable);
+            Destroy(objectToMove.GetComponent<Rigidbody>());
+            Destroy(this);
+            this.enabled = false;
+        }
+
     }
 }

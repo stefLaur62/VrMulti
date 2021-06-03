@@ -8,7 +8,7 @@ public class OwnOVRCustom : MonoBehaviour
     private float headStartHeight;
     private Vector3 headPos;
 
-
+    //Replace Head height when player start so camera isn't higher than player
     void ResetHead()
     {
         headPos = transform.position;

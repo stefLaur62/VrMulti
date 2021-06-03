@@ -19,63 +19,37 @@ public class LocalPlayerControl : NetworkBehaviour
     void Start()
     {
         pos = transform.position;
-    }
-
-    void Update()
-    {
         if (!isLocalPlayer)
         {
-            Destroy(ovrCamRig);
-            Destroy(this.GetComponentInChildren<RootMotion.FinalIK.VRIK>());
-            Destroy(GetComponent<SimpleCapsuleWithStickMovement>());
+            RemoveOtherPlayerComponent();
         }
         else
         {
-            if (leftEye.tag != "MainCamera") {
-                leftEye.tag = "MainCamera";
-                leftEye.enabled = true;
-            }
-            if (rightEye.tag != "MainCamera")
-            {
-                rightEye.tag = "MainCamera";
-                rightEye.enabled = true;
-            }
+            EnablePlayerCamera();
+        }
+    }
 
-            //leftHand.localRotation = InputDevice.;
-            /*leftHand.localRotation = InputTracking.GetLocalRotation(Node.LeftHand);
-            rightHand.localRotation = InputTracking.GetLocalRotation(Node.RightHand);
-            leftHand.localPosition = InputTracking.GetLocalPosition(Node.LeftHand);
-            rightHand.localPosition = InputTracking.GetLocalPosition(Node.RightHand);*/
+    //Remove player Component that are duplicated when a new player join
+    private void RemoveOtherPlayerComponent()
+    {
+        Destroy(ovrCamRig);
+        Destroy(this.GetComponentInChildren<RootMotion.FinalIK.VRIK>());
+        Destroy(this.GetComponentInChildren<LocomotionController>().gameObject);
+        Destroy(GetComponent<SimpleCapsuleWithStickMovement>());
+    }
 
-
-            /*//Handle movement
-            Vector2 primaryAxis = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick);
-
-            if(primaryAxis.y > 0f)
-            {
-                pos += (primaryAxis.y * transform.forward * Time.deltaTime * speed);
-            }
-            if(primaryAxis.y < 0f)
-            {
-                pos += (Mathf.Abs(primaryAxis.y) * -transform.forward * Time.deltaTime * speed);
-            }
-            if (primaryAxis.x > 0f)
-            {
-                pos += (primaryAxis.x * transform.right * Time.deltaTime * speed);
-            }
-            if (primaryAxis.x < 0f)
-            {
-                pos += (Mathf.Abs(primaryAxis.x) * -transform.right * Time.deltaTime * speed);
-            }
-
-            transform.position = pos;
-
-            //Rotation
-            Vector3 euler = transform.rotation.eulerAngles;
-            Vector2 secondaryAxis = OVRInput.Get(OVRInput.Axis2D.SecondaryThumbstick);
-            euler.y += secondaryAxis.x;
-            transform.rotation = Quaternion.Euler(euler);
-            transform.localRotation = Quaternion.Euler(euler);*/
+    //Assign right camera to player
+    private void EnablePlayerCamera()
+    {
+        if (leftEye.tag != "MainCamera")
+        {
+            leftEye.tag = "MainCamera";
+            leftEye.enabled = true;
+        }
+        if (rightEye.tag != "MainCamera")
+        {
+            rightEye.tag = "MainCamera";
+            rightEye.enabled = true;
         }
     }
 }

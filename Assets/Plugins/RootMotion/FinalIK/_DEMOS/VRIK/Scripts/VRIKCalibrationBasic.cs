@@ -30,7 +30,7 @@ namespace RootMotion.Demos
 
         private void LateUpdate()
         {
-            if (Input.GetKeyDown(KeyCode.C))
+            if (OVRInput.GetDown(OVRInput.Button.One))
             {
                 // Calibrate the character, store data of the calibration
                 data = VRIKCalibrator.Calibrate(ik, centerEyeAnchor, leftHandAnchor, rightHandAnchor, headAnchorPositionOffset, headAnchorRotationOffset, handAnchorPositionOffset, handAnchorRotationOffset, scaleMlp);

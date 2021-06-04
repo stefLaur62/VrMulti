@@ -556,7 +556,7 @@ namespace RootMotion.FinalIK
             ik.solver.spine.pelvisTarget.parent = pelvisTracker;
         }
 
-        /// <summary>
+        /// <summary>Vector3(0.0419999994,-0.0350000001,-0.112000003)
         /// Calibrates hand IK targets to specified anchor position and rotation offsets independent of avatar bone orientations.
         /// </summary>
         public static void CalibrateHands(VRIK ik, Transform leftHandAnchor, Transform rightHandAnchor, Vector3 anchorPositionOffset, Vector3 anchorRotationOffset)
